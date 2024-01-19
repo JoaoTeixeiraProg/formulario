@@ -1,0 +1,121 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #b0c4de;
+    display: table-cell;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: #606F7D;
+    align-items: center;
+}
+
+.heaber_button{
+    margin-left: 50px;
+    height: calc(100% - 10px);
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.heaber_button:hover{
+    background-color: #b0c4de;
+    color:black;
+    border: #b0c4de;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    width: 20%;
+}
+
+fieldset{
+    border: 3px solid #b0c4de;
+}
+
+legend{
+    border: 1px solid #b0c4de;
+    padding: 6px;
+    color:#000;
+    text-align: center;
+    background-color: #b0c4de;
+    border-radius: 5px;
+}
+
+.inputbox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1.2px;
+}
+
+.labelInput{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color:#b0c4de;
+
+}
+
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    /*background-color: #b0c4de;*/
+    background-color:transparent;
+    width: 100%;
+    border: 1px solid #b0c4de;
+    border-radius: 5px;
+    padding: 6px;
+    color:#b0c4de;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #b0c4de;
+    color: #000;
+}
+
+@media screen and (max-width: 720px){
+    .box{
+        width: calc(100% - 60px);
+    }
+}
